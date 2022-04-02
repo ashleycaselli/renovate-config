@@ -1,0 +1,15 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "local>ashleycaselli/renovate-config"
+    ],
+    "packageRules": [
+        {
+            "description": "Trigger a patch update if any Dockerfile gets updated",
+            "matchPaths": [
+                "Dockerfile"
+            ],
+            "semanticCommitScope": "core-deps"
+        }
+    ]
+}
