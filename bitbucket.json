@@ -1,0 +1,15 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "local>ashleycaselli/renovate-config"
+    ],
+    "packageRules": [
+        {
+            "description": "Updates to BitBucket pipelines should be tagged as 'ci'",
+            "matchPaths": [
+                "bitbucket-pipelines.yml"
+            ],
+            "semanticCommitType": "ci"
+        }
+    ]
+}
