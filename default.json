@@ -12,7 +12,7 @@
     "git-submodules": {
         "enabled": true
     },
-    "includeForks": true,
+    "forkProcessing": "enabled"
     "packageRules": [
         {
             "description": "Updates to GitHub Actions should be tagged as 'ci'",
